@@ -8,7 +8,7 @@
 
 
 # ask to the user to input a number of ten digit
-Accoun_number_input = input("Please enter a 10 digit account number: ")
+Accoun_number_input = input("Please enter an account number: ")
 # calculate the lenght of the imput
 Account_lenght = len(Accoun_number_input)
 # get the last 4 charachters of the account number 
