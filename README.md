@@ -80,3 +80,4 @@ What the script do in details is:
 #### Sources
 - [Python While Loops](https://www.w3schools.com/python/python_while_loops.asp)
 - [Python While Loops 2](https://www.w3schools.com/python/python_while_loops.asp](https://www.programiz.com/python-programming/while-loop)
+- [How to use multiple while loops at the same time?](https://stackoverflow.com/questions/43356309/how-to-use-multiple-while-loops-at-the-same-time)
