@@ -38,7 +38,7 @@ This program will ask to the user 2 amounts in cents, it will sum them, will det
   - [How to write a good README for your GitHub project?](https://bulldogjob.com/readme/how-to-write-a-good-readme-for-your-github-project)
   - [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
   - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-  - [How To Write A Good README File]([https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://dev.to/merlos/how-to-write-a-good-readme-bog))
+  - [How To Write A Good README File](https://dev.to/merlos/how-to-write-a-good-readme-bog)
 
 ### Task Week 03 accounts.py
 
@@ -78,7 +78,5 @@ What the script do in details is:
 4. When the number is one it will end the loop and it will write the word "End"
 
 #### Sources
-- [Python While Loops]([https://pytutorial.com/python-variable-in-string/](https://pytutorial.com/python-variable-in-string/](https://www.w3schools.com/python/python_while_loops.asp))
-- [print a variable](https://pytutorial.com/python-variable-in-string/)
-- [Python While Loops](https://pytutorial.com/python-variable-in-string/](https://www.w3schools.com/python/python_while_loops.asp)
-- [Python While Loops 2](https://pytutorial.com/python-variable-in-string/](https://www.w3schools.com/python/python_while_loops.asp](https://www.programiz.com/python-programming/while-loop)
+- [Python While Loops](https://www.w3schools.com/python/python_while_loops.asp)
+- [Python While Loops 2](https://www.w3schools.com/python/python_while_loops.asp](https://www.programiz.com/python-programming/while-loop)
