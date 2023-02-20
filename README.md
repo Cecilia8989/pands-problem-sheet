@@ -64,18 +64,20 @@ What the script do in details is:
 ### Task Week 04 collatz.py
 
 #### Description
-The porpuse of this script is ask to the user a positive number (if the user didn't enter a positive number it will be asked again until a positive numebr will be entered) nd depend on if the number is even or odd have it divided per 2 or moltiplied by 3 and added 1 until the number is one.
+The porpuse of this script is ask to the user a positive number (if the user didn't enter a positive number it will be asked again until a positive numebr will be entered) and, depend on if the number is even or odd, have it:
+ - devided per 2 ( if it is an even number).
+ - moltipled * 3 and added 1 (for odd number).
 
-Every new number will be printed out, e script will end up the loop when the number is 1 and will print the world "End".
+Every new number will be added to a list and the full list will be printed out when the loop will be exited.
 
 #### What the program does.
 What the script do in details is:
-1. it ask to the user to enter a positive number. A first while loop is used to check that the user enter a positive number. If the user enter a positive number the script will end the first while loop and enter in the second. Otherwise, it will be asked to input a new number until this is positive.
+1. it ask to the user to enter a positive number. A first while loop is used to check that the user enter a positive number. If the user enter a positive number the script will exit the first while loop and enter in the second. Otherwise, it will be asked to input a new number until this is positive.
 2. Once that the script have verified that the number is positive for each number diverse by one it will check if the number is even or odd.
- - for even number it will divide the number by 2 and will stamp the new number 
- - for odd number it will multiply them for 3, it will add one and it will stamp the new number
+ - for even number it will divide the number by 2 and add it to the list "numbers"
+ - for odd number it will multiply them for 3, it will add one and it will add them to the list "numbers"
 3. The while loop will keep going until the number is one
-4. When the number is one it will end the loop and it will write the word "End"
+4. When the number is one it will exit the second while loop and it will enter a for loop that will print all the numbers in the list "numbers".
 
 #### Sources
 - [Python While Loops](https://www.w3schools.com/python/python_while_loops.asp)
