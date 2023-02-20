@@ -13,6 +13,7 @@ This document contain an explanation of every program created as weekly task dur
 * [Task week 01 Helloworld.py](https://github.com/Cecilia8989/pands-problem-sheet/edit/main/README.md#task-week-01-helloworld.py)
 * [Task week 02 bank.py](https://github.com/Cecilia8989/pands-problem-sheet/edit/main/README.md#task-week-02-bank.py)
 * [Task Week 03 accounts.py](https://github.com/Cecilia8989/pands-problem-sheet#task-week-03-accountspy)
+* [Task Week 04 collatz.py](https://github.com/Cecilia8989/pands-problem-sheet/edit/main/README.md#task-week-04-collatzpy)
 
 ### Task week 01 Helloworld.py
 Helloworld.py says **Hello World!**
@@ -37,18 +38,19 @@ This program will ask to the user 2 amounts in cents, it will sum them, will det
   - [How to write a good README for your GitHub project?](https://bulldogjob.com/readme/how-to-write-a-good-readme-for-your-github-project)
   - [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
   - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-  - [How To Write A Good README File]([https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://dev.to/merlos/how-to-write-a-good-readme-bog))
+  - [How To Write A Good README File](https://dev.to/merlos/how-to-write-a-good-readme-bog)
 
 ### Task Week 03 accounts.py
 
 #### Description
 
-Porpuse of this script is ask to the user an account number of 10 digits and output the account number with only the last 4 digits visible and the previous ones replaced by an X.
+Porpuse of this script is ask to the user an account number and output the account number with only the last 4 digits visible and the previous ones replaced by an X.
 
 The script is dinamic, this mean the enter can enter account numbers of any length. It will read the number of digits enter by the user and it oucome all the number replaced by an X apart the last 4 digits.
 
 #### What the program does.
 
+What the script do in details is:
 1. It calculate the number of digits entered by the user.
 2. It get the last 4 digits of the account number.
 3. It subtract from the total count number of the digits input by the user four digits. This will determinate the number of X that it will need to be printed.
@@ -59,3 +61,23 @@ The script is dinamic, this mean the enter can enter account numbers of any leng
 - [How do I print a number n times in python?](https://stackoverflow.com/questions/56091904/how-do-i-print-a-number-n-times-in-python)
 - [print a variable](https://pytutorial.com/python-variable-in-string/)
 
+### Task Week 04 collatz.py
+
+#### Description
+The porpuse of this script is ask to the user a positive number (if the user didn't enter a positive number it will be asked again until a positive numebr will be entered) nd depend on if the number is even or odd have it divided per 2 or moltiplied by 3 and added 1 until the number is one.
+
+Every new number will be printed out, e script will end up the loop when the number is 1 and will print the world "End".
+
+#### What the program does.
+What the script do in details is:
+1. it ask to the user to enter a positive number. A first while loop is used to check that the user enter a positive number. If the user enter a positive number the script will end the first while loop and enter in the second. Otherwise, it will be asked to input a new number until this is positive.
+2. Once that the script have verified that the number is positive for each number diverse by one it will check if the number is even or odd.
+ - for even number it will divide the number by 2 and will stamp the new number 
+ - for odd number it will multiply them for 3, it will add one and it will stamp the new number
+3. The while loop will keep going until the number is one
+4. When the number is one it will end the loop and it will write the word "End"
+
+#### Sources
+- [Python While Loops](https://www.w3schools.com/python/python_while_loops.asp)
+- [Python While Loops 2](https://www.programiz.com/python-programming/while-loop)
+- [How to use multiple while loops at the same time?](https://stackoverflow.com/questions/43356309/how-to-use-multiple-while-loops-at-the-same-time)
