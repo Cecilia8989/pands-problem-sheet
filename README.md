@@ -147,26 +147,30 @@ if not os.path.exists(filename):
 else:
     print(count_letter(filename, letter))
 ````
-
 <details>
-           <summary>User point of view</summary>
+           <summary>Sources</summary>
            <p>
 
-User call of the program is :
+-	Stackoverflow
 
-```
-λ python 2-bmi.py
-```
-User input :
-```
-Enter your weight in kg: 80
-Enter your height in cm: 180
-```
-and the output is :
+    [Phyton command line arguments file name ](https://stackoverflow.com/questions/33766029/python-command-line-arguments-file-name)
 
-```
-Your BMI is 24.69
-```
+    [How to write a function that takes in the name of a file as the argument in phyton  ](https://stackoverflow.com/questions/63066948/how-to-write-a-function-that-takes-in-the-name-of-a-file-as-the-argument-in-pyth)
+
+    [I want to read in a file from the command line in python](https://stackoverflow.com/questions/7439145/i-want-to-read-in-a-file-from-the-command-line-in-python)
+
+- youtube 
+
+    [Python 3 Programming Tutorial - Sys Module](https://www.youtube.com/watch?v=rLG7Tz6db0w)
+
+    [Command line arguments](https://www.youtube.com/watch?v=PZN7vVxeh9M)
+
+- Real phyton - [Python Command-Line Arguments](https://realpython.com/python-command-line-arguments/)
+
+- Tutorialspoint - [Python - Command Line Arguments](https://www.tutorialspoint.com/python/python_command_line_arguments.ht)
+
+- Geeksforgeeks - [Count the number of times a letter appears in a text file in Python](https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/)
+
 </p>
 </details>
 
