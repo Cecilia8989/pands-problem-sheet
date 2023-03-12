@@ -148,10 +148,8 @@ else:
     print(count_letter(filename, letter))
 ````
 
-
-
 <details>
-           <summary>Source
+           <summary>User point of view</summary>
            <p>
 
 User call of the program is :
@@ -171,4 +169,5 @@ Your BMI is 24.69
 ```
 </p>
 </details>
- - - - -
+
+- - - -
