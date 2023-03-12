@@ -106,7 +106,7 @@ As an addiction functionality I have made the program tell to the user, in case 
 The program prompts the user to input the name of a text file to be read using the sys module. The program then checks if the file exists in the current directory. If the file does not exist, the program informs the user that the file does not exist and either needs to be created or the file name needs to be checked. In this case, to meet the task requirements, a file named "moby-dick.txt" has been created in the same directory to be read by the program if specified by the user. If the program finds the file, it opens the file in read mode and counts the number of occurrences of lowercase "e" only. Finally, the program prints the count of the lowercase "e" occurrences in the file.
 
 <details>
-           <summary>Code code comments</summary>
+           <summary>Code comments</summary>
            <p>
 
 import modules needed for the script:
