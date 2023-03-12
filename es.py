@@ -4,6 +4,7 @@
 # Because of that i have created a text file in the same repository with the name moby-dick.txt with a random content
 # Author: Cecilia Pastore 
 
+
 # import module needed for the script
 import sys 
 import os  
@@ -16,9 +17,8 @@ letter = "e"
 # function to count the number of occurrences of letter in the file
 def count_letter(filename, letter):
     with open(filename, "r") as f:
-        count = 0
-        for line in f:
-            count = count + line.count(letter)
+        counter = f.read()
+        count = counter.count(letter)
     return (count)
 
 # check if file exists, if not prompt inform the user, otherwise count the letter occurrence
@@ -26,4 +26,4 @@ if not os.path.exists(filename):
     print(filename, "does not exist, create it or check your spelling ")
 else:
     print(count_letter(filename, letter))
-    
+
