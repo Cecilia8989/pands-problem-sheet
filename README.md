@@ -89,6 +89,7 @@ What the script do in details is:
 #### Description
 
 Tas requested:
+
 <img width="593" alt="image" src="https://user-images.githubusercontent.com/79106203/224556522-a8206765-d293-4b4d-abd3-33cb82476b77.png">
 
 The program read a file text called by the user through the prom command and return the number of time the letter "e" is in the file.
