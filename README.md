@@ -105,7 +105,9 @@ As an addiction functionality I have made the program tell to the user, in case 
 
 The program prompts the user to input the name of a text file to be read using the sys module. The program then checks if the file exists in the current directory. If the file does not exist, the program informs the user that the file does not exist and either needs to be created or the file name needs to be checked. In this case, to meet the task requirements, a file named "moby-dick.txt" has been created in the same directory to be read by the program if specified by the user. If the program finds the file, it opens the file in read mode and counts the number of occurrences of lowercase "e" only. Finally, the program prints the count of the lowercase "e" occurrences in the file.
 
-#### Code explanation 
+<details>
+           <summary>Code code comments</summary>
+           <p>
 
 import modules needed for the script:
  - import sys in order to facilitate the command line arguments 
@@ -145,8 +147,13 @@ Main program:
 if not os.path.exists(filename):
     print(filename, "does not exist, create it or check your spelling ")
 else:
-    print(count_letter(filename, letter))
+    print(count_letter(filename, letter))           
+            
 ````
+</p>
+</details>
+
+- - - -
 <details>
            <summary>Sources</summary>
            <p>
