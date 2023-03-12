@@ -83,3 +83,56 @@ What the script do in details is:
 - [Python While Loops](https://www.w3schools.com/python/python_while_loops.asp)
 - [Python While Loops 2](https://www.programiz.com/python-programming/while-loop)
 - [How to use multiple while loops at the same time?](https://stackoverflow.com/questions/43356309/how-to-use-multiple-while-loops-at-the-same-time)
+
+### Task Week 7 - ES
+
+#### Description
+
+Tas requested:
+<img width="593" alt="image" src="https://user-images.githubusercontent.com/79106203/224556522-a8206765-d293-4b4d-abd3-33cb82476b77.png">
+
+The program read a file text called by the user through the prom command and return the number of time the letter "e" is in the file.
+For my understanding from the explanation of the exercise the program should be called es.py and the file moby-dict.txt.
+As an addiction functionality I have made the program tell to the user, in case the file doesn't exist, that the file have not been found in the directory and to create it or check the spelling.
+
+#### How it works
+
+The program prompts the user to input the name of a text file to be read using the sys module. The program then checks if the file exists in the current directory. If the file does not exist, the program informs the user that the file does not exist and either needs to be created or the file name needs to be checked. In this case, to meet the task requirements, a file named "moby-dick.txt" has been created in the same directory to be read by the program if specified by the user. If the program finds the file, it opens the file in read mode and counts the number of occurrences of lowercase "e" only. Finally, the program prints the count of the lowercase "e" occurrences in the file.
+
+#### Code explanation 
+
+import modules needed for the script
+ - import sys in order to abilitate the command line arguments 
+ - import os for checking if the file exist
+ <img width="123" alt="image" src="https://user-images.githubusercontent.com/79106203/224556643-b776929d-9cf3-425d-821e-8e942f0fca43.png">
+
+Get the filename from the user through a command line argument 
+<img width="177" alt="image" src="https://user-images.githubusercontent.com/79106203/224556931-88c96a82-64eb-4fea-bfc3-28d8c664221a.png">
+
+Establish the variable "letter" as the letter that will be counted.
+<img width="80" alt="image" src="https://user-images.githubusercontent.com/79106203/224556986-5a4d8d11-1d0a-4155-951f-260032a6fc1f.png">
+
+Funciont that:
+   1. open the file in read mode 
+   2. read file contents into variable
+   3. count the occurence in the the file of the variable letter
+   4. return this count 
+
+<img width="274" alt="image" src="https://user-images.githubusercontent.com/79106203/224557148-32df9ae5-20a4-48b4-b823-fd56de8f0008.png">
+
+Main program:
+  1. Check if the file exist with os.path.exist and if not exist inform the user 
+
+<img width="474" alt="image" src="https://user-images.githubusercontent.com/79106203/224557256-48011262-05c2-487a-ba3e-b6b91dcdc510.png">
+
+  2 if the file exist execute the above function in order to count the number of tyme variable "letters" is in the text file
+  
+  <img width="323" alt="image" src="https://user-images.githubusercontent.com/79106203/224557314-d0f5debd-d875-49f3-80df-aea379594d74.png">
+
+
+
+
+
+
+
+
