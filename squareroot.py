@@ -6,10 +6,10 @@
 # at this stage it calculate the square root of the user input number 
 # Author: Cecilia Pastore 
 
-# input the user to enter a positive flaot number 
+# promp the user to enter a positive floiting number 
 user_input=float(input("Please enter a positive float number "))
 
-# function in case the number is not positive   
+# function to handle the case when the input number is not positive    
 def choice_user():
         print("You didn't enter a postive numer")
         print("\t Select what do you want to do: ")
@@ -24,7 +24,7 @@ def choice_user():
         else:
             return float(input("Please enter a positive float number "))
  
-# square calculated based on newton method
+# funciont to calculated  the square root based on newton method
 def sqrt(user_input):
     approx = 0.5 * user_input
     better = 0.5 * (approx + user_input/approx)
@@ -33,10 +33,13 @@ def sqrt(user_input):
         better = 0.5 * (approx + user_input/approx)
     return approx
 
-#main programs 
-while user_input <0:
+# main programs 
+# If user input is negative, call choice_user() to prompt for a positive number
+while user_input < 0:
     user_input = choice_user()
-
-print(sqrt(user_input))
+    
+# Print the square root. Number round to 4.
+square_root = sqrt(user_input)
+print(round(square_root,4))
     
     

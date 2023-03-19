@@ -21,6 +21,7 @@ def count_letter(filename, letter):
         count = counter.count(letter)
     return (count)
 
+# main programs
 # check if file exists, if not prompt inform the user, otherwise count the letter occurrence
 if not os.path.exists(filename):
     print(filename, "does not exist, create it or check your spelling ")
