@@ -1,21 +1,17 @@
 # account.py
-
 '''
-This program ask to the user a 10 account number and outputs the account number with only the last 4 digits showing
-and the previous ones replaced with Xs
-The program is dinamic and is able to consider account number of any lenght. 
-It will read the number of digits enter by the user and it will outcome all the numbers replaced by X apart the last 4.
+This program masks a user's inputted account number by replacing all but the last 4 digits with X's. 
+It can handle account numbers of any length.
 '''
-
 # Author:Cecilia Pastore 
 
-# ask to the user to input a number of ten digit
+# asks to the user to input an account number
 Accoun_number_input = input("Please enter an account number: ")
-# calculate the lenght of the imput
+# calculate the lenght of the input
 Account_lenght = len(Accoun_number_input)
 # get the last 4 charachters of the account number 
 Account_last_4_digits = Accoun_number_input[-4:]
-# get how many X the program will need to stamp 
+# calculate the number of X's needed to replace the remaining digits
 number_of_X = Account_lenght - 4
-# print all numbers in the account number as a X apart the last 4 digits
+# print the account number with all but the last 4 digits replaced with X's
 print("X"*(number_of_X)+Account_last_4_digits)
