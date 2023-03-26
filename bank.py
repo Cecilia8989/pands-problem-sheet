@@ -2,14 +2,12 @@
 # This program ask 2 money quantities on cent to the user and calculate the euro amount 
 # Author: Cecilia Pastore 
 
-# Ask to the users 2 quantites in cents
-Amount1 = int(input("Please enter an amount (in cents): "))
-Amount2 = int(input("Please enter an amount (in cents): "))
+# Ask the user for two quantities in cents
+cents1 = int(input("Please enter an amount (in cents): "))
+cents2 = int(input("Please enter an amount (in cents): "))
 
-# Calculate the amount in Euro/100
+# Calculate the total amount in euro, by adding the two quantities and dividing by 100
+amount_in_euro = (cents1 + cents2)/100
 
-AmountInEuro = (Amount1 + Amount2)/100
-
-# stamp the quanity in Euro 
-
-print (f'The sum of there is \u20ac{AmountInEuro}')
+# Print the total amount in euro, with a Euro sign symbol
+print (f'The sum of these is \u20ac{amount_in_euro}')

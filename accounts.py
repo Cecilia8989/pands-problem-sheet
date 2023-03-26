@@ -1,11 +1,13 @@
 # account.py
-# Author:Cecilia Pastore 
-# This program ask to the user a 10 account number 
-# and outputs the account number with only the last 4 digits showing
-# and the previous ones replaced with Xs
-# The program is dinamic and is able to consider account number of any lenght. 
-# It will read the number of digits enter by the user and it will outcome all the numbers replaced by X apart the last 4.
 
+'''
+This program ask to the user a 10 account number and outputs the account number with only the last 4 digits showing
+and the previous ones replaced with Xs
+The program is dinamic and is able to consider account number of any lenght. 
+It will read the number of digits enter by the user and it will outcome all the numbers replaced by X apart the last 4.
+'''
+
+# Author:Cecilia Pastore 
 
 # ask to the user to input a number of ten digit
 Accoun_number_input = input("Please enter an account number: ")
