@@ -1,5 +1,4 @@
 # hellowworld.py
-
 # Print "Hello world!"
 # Author: Cecilia Pastore 
 
