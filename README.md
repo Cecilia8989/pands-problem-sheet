@@ -15,21 +15,119 @@ This document contain an explanation of every program created as weekly task dur
 * [Task Week 03 accounts.py](https://github.com/Cecilia8989/pands-problem-sheet#task-week-03-accountspy)
 * [Task Week 04 collatz.py](https://github.com/Cecilia8989/pands-problem-sheet/edit/main/README.md#task-week-04-collatzpy)
 
-### Task week 01 Helloworld.py
-Helloworld.py says **Hello World!**
+### Task Week 1 - HelloWorld
 
-### Task week 02 bank.py
+#### Description 
 
-#### Description
-This program will ask to the user 2 amounts in cents, it will sum them, will determinate the euro amount and it will print it.
+<details>
+    <summary>Task requested:</summary>
+           <p>
 
-#### What the program does.
+>Commit and push a file to the problem sheet called helloworld.py
 
-1. It will ask the user to enter 2 amounts in cents (integer)
-2. It will sum up the 2 amounts and will divide the sum per 100. This will dtermine the amount in Euro as integer
-3. It will print "The sum of there is € {the amount}
+</p>
+</details>
 
-#### Sources
+The script print "Hello World!" when executed. 
+
+- - - -
+
+#### How it works
+
+It a command that once executed it print Hello World!.
+
+<details>
+           <summary>Code comments</summary>
+           <p>
+Print Hello world!
+
+```python
+print("Hello World!")
+```
+</p>
+</details>
+
+- - - -
+<details>
+           <summary>Sources</summary>
+           <p>
+
+-	Lecture Week 01 
+             </p>
+</details>
+
+### Task Week  2 - Bank.py
+
+#### Description 
+
+<details>
+    <summary>Task requested:</summary>
+           <p>
+
+>When Banks are storing currency figures, they store them as integers (usually in cent).This is to avoid rounding errors. 
+>
+>Write a program called bank.py 
+>
+>The program should:
+>Prompt the user and read in two money amounts (in cent)
+>Add the two amounts
+>Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
+>
+
+```sh
+$ python bank.py
+Enter amount1(in cent): 65
+Enter amount2(in cent): 180
+The sum of these is €2.45
+
+```
+</p>
+</details>
+
+This program is designed to ask the user for two monetary quantities in cents and then calculate the total amount in euros. The resulting amount is displayed with the Euro sign symbol.
+
+- - - -
+
+#### How it works
+
+Here the main steps of the program:
+
+- Run the program by executing the "bank.py" script. 
+- The program will prompt the user to enter a first quantity in cents.
+- A  second quantities in cents will be asked to the user.
+- The program will them calculate the total amount in Euro by adding the two quantities and dividing the result by 100.
+- The total amount in Euro will be displayed with the Euro Symbol
+
+
+<details>
+           <summary>Code comments</summary>
+           <p>
+
+The user is asked for two quantities in cents. The quantities need to be integer (absolute number).
+```python
+cents1 = int(input("Please enter an amount (in cents): "))
+cents2 = int(input("Please enter an amount (in cents): "))
+```
+The program calculate the total amount in Euro by adding user inputs (cent1 and cent2) and dividing them by 100.
+```python
+amount_in_euro = (cents1 + cents2)/100
+
+```
+Print the total amount in Euro with the [Euro symbol](https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python#:~:text=Euro%20is%20encoded%20as%2080h%20%280x80%29%20in%20the,as%20others%20said%2C%20using%20the%20correct%20encoding%20%28utf-8%29%3A).
+````python
+print (f'The sum of there is \u20ac{amount_in_euro}')
+````
+
+
+
+</p>
+</details>
+
+- - - -
+<details>
+           <summary>Sources</summary>
+           <p>
+
 - [how to write the euro sign in phyton without the keybord](https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python#:~:text=Euro%20is%20encoded%20as%2080h%20%280x80%29%20in%20the,as%20others%20said%2C%20using%20the%20correct%20encoding%20%28utf-8%29%3A)
 - Readme file:
   - [How to add a link or Hyperlink in Readme.MD file](https://devcracker.medium.com/how-to-add-a-link-or-hyperlink-in-readme-md-file-68752bb6499e)
@@ -39,6 +137,10 @@ This program will ask to the user 2 amounts in cents, it will sum them, will det
   - [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
   - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
   - [How To Write A Good README File](https://dev.to/merlos/how-to-write-a-good-readme-bog)
+
+
+</p>
+</details>
 
 ### Task Week 03 accounts.py
 
