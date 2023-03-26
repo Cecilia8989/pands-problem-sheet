@@ -1,6 +1,5 @@
 # bank.py
 # This program ask 2 money quantities on cent to the user and calculate the euro amount 
-
 # Author: Cecilia Pastore 
 
 # Ask the user for two quantities in cents
