@@ -92,7 +92,7 @@ This program is designed to ask the user for two monetary quantities in cents an
 
 Here the main steps of the program:
 
-- Run the program by executing the "bank.py" script. 
+- The program can be run by executing the "bank.py" script. 
 - The program will prompt the user to enter a first quantity in cents.
 - A  second quantity in cents will be asked to the user.
 - The program will them calculate the total amount in Euro by adding the two quantities and dividing the result by 100.
@@ -142,26 +142,85 @@ print (f'The sum of these is \u20ac{amount_in_euro}')
 </p>
 </details>
 
-### Task Week 03 accounts.py
+### Task Week 3 - Account.py 
 
-#### Description
+#### Description 
 
-Porpuse of this script is ask to the user an account number and output the account number with only the last 4 digits visible and the previous ones replaced by an X.
+<details>
+    <summary>Task requested:</summary>
+           <p>
 
-The script is dinamic, this mean the enter can enter account numbers of any length. It will read the number of digits enter by the user and it oucome all the number replaced by an X apart the last 4 digits.
+>Bank account numbers can stored as 10 character strings, for security reasons some applications only display the last 4 characters (with the other other characters replaced with Xs).
+>
+>Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
-#### What the program does.
 
-What the script do in details is:
-1. It calculate the number of digits entered by the user.
-2. It get the last 4 digits of the account number.
-3. It subtract from the total count number of the digits input by the user four digits. This will determinate the number of X that it will need to be printed.
-4. It print the needed Xs and the last 4 digits of the account number.
+```sh
+$ python accounts.py
+Please enter an 10 digit account number: 1234567890
+XXXXXX7890
+```
+> Extra:
+>
+>Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
+</p>
+</details>
 
-#### Sources
+I decide to develop the program following the "extra" request.
+
+This program is designed to ask the user for an account number and print the account number with all the digits replaced with X's except for the last 4 digits. 
+It can handle account numbers of any length, but the number of digits replaced with X's will vary depending on the length of the account number.
+
+- - - -
+
+#### How it works
+
+Here the main steps of the program:
+- The program can be run by executing the "account.py" script
+- The user will be asked to enter an account number 
+- The program will then calculate the length of the account number and get the last 4 digits
+- It will calculate the number of X's that are needed to replace the remaining digits
+- It will then display the masked account with all the digits replaced by X's except the last 4 digits 
+
+<details>
+           <summary>Code comments</summary>
+           <p>
+
+Get the user to enter an account number of any length
+```python
+account_number_input = input("Please enter an account number: ")
+```
+The length of the account number input by the user is calculated
+```python
+account_lenght = len(account_number_input)
+```
+Obtain the last 4 digits of the account number
+````python
+account_last_4_digits = account_number_input[-4:]
+````
+Calculate the number of X's needed to masks all but the last 4 digits with X's. 
+````python
+number_of_X = account_lenght - 4
+````
+Print the masked account.
+````python
+print("X"*(number_of_X)+account_last_4_digits)                    
+````
+</p>
+</details>
+
+- - - -
+<details>
+           <summary>Sources</summary>
+           <p>
+
 - [Get the last four number of a string in phyton ](https://reactgo.com/python-get-last-four-characters/#:~:text=To%20access%20the%20last%204%20characters%20of%20a,position%20of%20a%20string.%20Here%20is%20an%20example%3A)
 - [How do I print a number n times in python?](https://stackoverflow.com/questions/56091904/how-do-i-print-a-number-n-times-in-python)
 - [print a variable](https://pytutorial.com/python-variable-in-string/)
+
+</p>
+</details>
+
 
 ### Task Week 04 collatz.py
 
