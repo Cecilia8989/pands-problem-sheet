@@ -94,7 +94,7 @@ Here the main steps of the program:
 
 - Run the program by executing the "bank.py" script. 
 - The program will prompt the user to enter a first quantity in cents.
-- A  second quantities in cents will be asked to the user.
+- A  second quantity in cents will be asked to the user.
 - The program will them calculate the total amount in Euro by adding the two quantities and dividing the result by 100.
 - The total amount in Euro will be displayed with the Euro Symbol
 
@@ -115,7 +115,7 @@ amount_in_euro = (cents1 + cents2)/100
 ```
 Print the total amount in Euro with the [Euro symbol](https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python#:~:text=Euro%20is%20encoded%20as%2080h%20%280x80%29%20in%20the,as%20others%20said%2C%20using%20the%20correct%20encoding%20%28utf-8%29%3A).
 ````python
-print (f'The sum of there is \u20ac{amount_in_euro}')
+print (f'The sum of these is \u20ac{amount_in_euro}')
 ````
 
 
