@@ -15,7 +15,7 @@ This document contain an explanation of every program created as weekly task dur
 * [Task Week 03 accounts.py](https://github.com/Cecilia8989/pands-problem-sheet#task-week-03-accountspy)
 * [Task Week 04 collatz.py](https://github.com/Cecilia8989/pands-problem-sheet/edit/main/README.md#task-week-04-collatzpy)
 
-### Task Week 1 - HelloWorld
+### Task Week 1 - helloWorld.py
 
 #### Description 
 
@@ -56,7 +56,7 @@ print("Hello World!")
              </p>
 </details>
 
-### Task Week  2 - Bank.py
+### Task Week  2 - bank.py
 
 #### Description 
 
@@ -142,7 +142,7 @@ print (f'The sum of these is \u20ac{amount_in_euro}')
 </p>
 </details>
 
-### Task Week 3 - Account.py 
+### Task Week 3 - account.py 
 
 #### Description 
 
