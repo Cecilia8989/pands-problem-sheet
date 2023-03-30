@@ -392,6 +392,10 @@ This code print the appropriate message based on the day of the week. The if sta
 - [Print Colors in Python terminal](https://www.geeksforgeeks.org/print-colors-python-terminal/)
 
 </p>
+</details>
+
+- - - -
+    
 
 ### Task Week  6 - Squareroot
 
