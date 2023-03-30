@@ -92,7 +92,7 @@ This program is designed to ask the user for two monetary quantities in cents an
 
 Here the main steps of the program:
 
-- The program can be run by executing the "bank.py" script. 
+- The program can be run by executing the **"bank.py"** script. 
 - The program will prompt the user to enter a first quantity in cents.
 - A  second quantity in cents will be asked to the user.
 - The program will them calculate the total amount in Euro by adding the two quantities and dividing the result by 100.
@@ -108,7 +108,7 @@ The user is asked for two quantities in cents. The quantities need to be integer
 cents1 = int(input("Please enter an amount (in cents): "))
 cents2 = int(input("Please enter an amount (in cents): "))
 ```
-The program calculate the total amount in Euro by adding user inputs (cent1 and cent2) and dividing them by 100.
+The program calculate the total amount in Euro by adding user inputs (**cent1** and **cent2**) and dividing them by 100.
 ```python
 amount_in_euro = (cents1 + cents2)/100
 
@@ -176,7 +176,7 @@ It can handle account numbers of any length, but the number of digits replaced w
 #### How it works
 
 Here the main steps of the program:
-- The program can be run by executing the "account.py" script
+- The program can be run by executing the **"account.py"** script
 - The user will be asked to enter an account number 
 - The program will then calculate the length of the account number and get the last 4 digits
 - It will calculate the number of X's that are needed to replace the remaining digits
@@ -255,12 +255,13 @@ Please enter a positive integer: 10
 #### How it works
 
 Here the main steps of the program:
-1. The script first prompts the user to enter a positive number. A first while loop is used to check if the user enters a positive number. If they do, the script exits the first while loop, If the user enters a negative number, the script will continue to prompt the user to enter a positive number until one is provided.
-2. The script will check whether the number is even or odd and cased on that perform a calculation.
-   -  If the number is even, the script divides it by 2 and adds it to the "numbers" list. 
+1. The program can be run by executing the **"collantz.py"** script
+2. The script first prompts the user to enter a positive number. A first while loop is used to check if the user enters a positive number. If they do, the script exits the first while loop, If the user enters a negative number, the script will continue to prompt the user to enter a positive number until one is provided.
+3. The script will check whether the number is even or odd and cased on that perform a calculation.
+   - If the number is even, the script divides it by 2 and adds it to the "numbers" list. 
    - If it is odd, the script multiplies the number by 3, adds 1, and then adds it to the "numbers" list. 
-3. The while loop will continue until the number is one.
-4. When the number is 1 the while loop will exit and the full list will be printed 
+4. The while loop will continue until the number is one.
+5. When the number is 1 the while loop will exit and the full list will be printed 
 
 <details>
            <summary>Code comments</summary>
@@ -323,7 +324,6 @@ for n in numbers:
 ### Task Week 5 - weekday.py
 
 #### Description 
-The Weekday Checker is a Python program that checks whether today is a weekday or the weekend, and prints a message indicating which one it is. The program uses the datetime module to get the current day of the week, and the termcolor module to print colored text to the console. When run, the program prints the message "Yes, unfortunately today is a weekday." in red if today is a weekday, or "It is the weekend, yay!" in red if today is the weekend.
 
 <details>
     <summary>Task requested:</summary>
@@ -346,18 +346,19 @@ It is the weekend, yay!
 </details>
 
 - - - -
-
+The Weekday Checker is a Python program that checks whether today is a weekday or the weekend, and prints a message indicating which one it is. When run, the program prints the message "Yes, unfortunately today is a weekday." in red if today is a weekday, or "It is the weekend, yay!" in red if today is the weekend.
 
 #### How it works
 
 Here the main steps of the program:
 
-1. Import the datetime module and the termcolor module
-2. Use the datetime.datetime.today() function to get the current date and time
-3. Use the weekday() function to get the current day of the week, where Monday is 0 and Sunday is 6.
-4. Check whether the current day of the week is less than 5 using an if statement.
-5. If the current day of the week is less than 5, print the message "Yes, unfortunately today is a weekday." in red 
-6. If the current day of the week is 5 or 6 (i.e., the weekend), print the message "It is the weekend, yay!" in red.
+1. The program can be run by executing the **"weekday.py"** script
+2. Import the datetime module and the termcolor module
+3. Use the datetime.datetime.today() function to get the current date and time
+4. Use the weekday() function to get the current day of the week, where Monday is 0 and Sunday is 6.
+5. Check whether the current day of the week is less than 5 using an if statement.
+6. If the current day of the week is less than 5, print the message "Yes, unfortunately today is a weekday." in red 
+7. If the current day of the week is 5 or 6 (i.e., the weekend), print the message "It is the weekend, yay!" in red.
 
 <details>
            <summary>Code comments</summary>
@@ -420,7 +421,7 @@ The square root of 14.5 is approx. 3.8.
 </details>
 
 - - - -
-In addiction to the requested task, The program is first checking that the user enter a positive number. If the number negative the program will propose several scenario until the number input by the user will be positive.
+In addiction to the requested task, The program is first checking that the user enter a positive number. If the number entered is negative the program will propose several scenario until the number input by the user will be positive.
 
 In summary, the program prompts the user to enter a positive floating-point number, and then calculates the square root of that number using the Newton method. If the user enters a negative number, the program calls a function called choice_user() to handle the case and prompt the user to either keep the same number and make it positive, or enter a new positive number. The program then calls the sqrt() function to calculate the square root of the input number using the Newton method, and prints the result.
 
