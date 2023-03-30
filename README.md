@@ -624,3 +624,113 @@ else:
 </details>
 
 - - - -
+### Task Week 8 - plottask.py
+
+#### Description 
+
+<details>
+    <summary>Task requested:</summary>
+           <p>
+
+>Write a program called plottask.py that displays:
+> - a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
+> - and a plot of the function  h(x)=x3 in the range [0, 10], 
+>
+> on the one set of axes.
+</p>
+</details>
+
+- - - -
+The code generates a histogram of random values drawn from a normal distribution and plots the function h(x) = x^3 on the same graph.
+It sets the parameters for the normal distribution, generates random values, plots the histogram, and plots the function. Labels, title, legend, and grid are defined, and the plot is displayed.
+
+#### How it works
+
+Here the main steps of the program:
+
+1. The program can be run by executing the "plottask.py" script.
+2. The program first import necessary libraries
+3. It sets the parameters for a normal distribution, including the mean, standard deviation, and number of values.
+4. It generates random values from the normal distribution and stores them in a variable.
+5. It creates a histogram of the generated values
+6. It calculates the points for a mathematical function (h(x) = x^3) and plots the function on the same graph as the histogram.
+7. It defines labels for the x-axis and y-axis, sets a title for the graph, and adds a legend.
+8. Finally, it shows the plot.
+
+<details>
+           <summary>Code comments</summary>
+           <p>
+
+
+The program import two libraries. The first is **numpy** and it will be used to create random number from a normal distribution. The second, **matplotlib.pyplot**, is a library used to plot data. 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
+The parameters for the normal distribution mean (**mean_x**), standard deviation (**std_x**) and number of value to be generated (**values_x**) are set.
+```python
+mean_x = 5
+std_x = 2
+values_x = 1000
+```
+Random values are generated from a normal distribution using the above parameters and the values are stored in the variable **'x'**.
+````python
+x = np.random.normal(loc=mean_x, scale=std_x, size=values_x)
+````
+Using the **matplotlib** library and histogram of the the random value is plot. The alpha of the parameters is to give to the plot a transparency, while the color of the plot is set to red. The label parameter is set to be used in the legend. 
+````python
+plt.hist(x, alpha=0.5, color='r', label='Normal Distribution')
+````
+**Numpy** is used to generate 100 equal spaced point between 0 and 10. 
+````python
+x_points = np.linspace(0, 10, 100)
+````
+Y point are calculated based on function h(x) = x^3
+````python    
+y_points = x_points ** 3              
+````
+Plot the funcion h(x) = x^3 with a blue color, a dotted linestyle and a label that is added that will be used in the legend.
+```python
+plt.plot(x_points, y_points, color='b', linestyle='dotted', label='h(x) = x^3')
+```
+Two fonts are defined
+```python
+font1 = {'family': 'serif', 'color': 'blue', 'size': 20}
+font2 = {'family': 'serif', 'color': 'darkred', 'size': 15}
+```
+x-axis and Y-axis are defined with font 2
+````python
+plt.xlabel('x - random normal number', fontdict=font2)
+plt.ylabel('y = x^3', fontdict=font2)
+````
+The title/legend of the graph is define. I also add some grid to it.
+````python
+plt.title('Task Week 8', fontdict=font1)
+plt.legend(loc='upper left')
+plt.grid(linestyle='--', alpha=0.7)
+````
+Finally the plot is shown. 
+````python
+plt.show()                 
+````
+</p>
+</details>
+
+- - - -
+<details>
+           <summary>Sources</summary>
+           <p>
+
+- [Scipy Normal Distribution](https://pythonguides.com/scipy-normal-distribution/)
+- [A Quick Introduction to Numpy Random Normal](https://www.sharpsightlabs.com/blog/numpy-random-normal/)
+- [Normal (Gaussian) Distribution](https://www.w3schools.com/python/numpy/numpy_random_normal.asp)
+- [How to: Plot a Function in Python](https://www.youtube.com/watch?v=ufO_BScIHDQ)
+- [How to Make Attractive Matplotlib Plots in Python](https://towardsdatascience.com/customize-your-matplotlib-plots-in-python-54726f414602)
+- [np.linspace(): Create Evenly or Non-Evenly Spaced Arrays](https://realpython.com/np-linspace-numpy/)
+- [Histograms in Python](https://medium.com/@kasiarachuta/histograms-in-python-85bd8eaa2248)
+- [Python Plotting With Matplotlib (Guide)](https://realpython.com/python-matplotlib-guide/#adding-a-legend-to-your-plot)
+- [CSS Fonts](https://www.w3schools.com/css/css_font.asp)
+- [Fonts](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+
+</p>
+</details>
