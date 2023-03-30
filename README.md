@@ -320,6 +320,79 @@ for n in numbers:
 </p>
 </details>
 
+### Task Week 5 - weekday.py
+
+#### Description 
+The Weekday Checker is a Python program that checks whether today is a weekday or the weekend, and prints a message indicating which one it is. The program uses the datetime module to get the current day of the week, and the termcolor module to print colored text to the console. When run, the program prints the message "Yes, unfortunately today is a weekday." in red if today is a weekday, or "It is the weekend, yay!" in red if today is the weekend.
+
+<details>
+    <summary>Task requested:</summary>
+           <p>
+
+>Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
+>An example of running this program on a Thursday is given below.
+
+```sh
+$ python weekday.py
+Yes, unfortunately today is a weekday.
+```
+>An example of running it on a Saturday is as follows:
+
+```sh
+$ python weekday.py
+It is the weekend, yay!
+```
+</p>
+</details>
+
+- - - -
+
+
+#### How it works
+
+Here the main steps of the program:
+
+1. Import the datetime module and the termcolor module
+2. Use the datetime.datetime.today() function to get the current date and time
+3. Use the weekday() function to get the current day of the week, where Monday is 0 and Sunday is 6.
+4. Check whether the current day of the week is less than 5 using an if statement.
+5. If the current day of the week is less than 5, print the message "Yes, unfortunately today is a weekday." in red 
+6. If the current day of the week is 5 or 6 (i.e., the weekend), print the message "It is the weekend, yay!" in red.
+
+<details>
+           <summary>Code comments</summary>
+           <p>
+
+Import datatime for working with data and time.
+```python
+import datetime
+```
+Import termocolor-cprint from printing colored text.
+```python
+from termcolor import cprint
+```
+Determine the [current day of the week](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python). This code used the **'today()'** method of the **'datatime()'** class to get the current date and time, and the **'weekday()** method to extract the of the week as an integer. 0-5 is Monday-Friday (week days) and 5-6 are Saturday-Sunday (weekend days).
+````python
+weekno = datetime.datetime.today().weekday()
+````
+This code print the appropriate message based on the day of the week. The if statement check whether **'weekno'** is less than 5, which means it is a weekday (Monday-friday). the script prints the message **"Yes, unfortunately today is a weekday."** in red color using the [cprint](https://www.geeksforgeeks.org/print-colors-python-terminal/) function. Otherwise, if **'weekno'** is 5 or 6, the script prints the message **"It is the weekend, yay!"** in red color using cprint.
+
+
+</p>
+</details>
+
+- - - -
+<details>
+           <summary>Sources</summary>
+           <p>
+
+- [how to find current day is weekday or weekends in Python?](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
+- [Python datetime](https://www.programiz.com/python-programming/datetime)
+- [weekday() Function Of Datetime.date Class In Python](https://www.geeksforgeeks.org/weekday-function-of-datetime-date-class-in-python/)
+- [Print Colors in Python terminal](https://www.geeksforgeeks.org/print-colors-python-terminal/)
+
+</p>
+
 ### Task Week  6 - Squareroot
 
 #### Description 
