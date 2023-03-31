@@ -519,7 +519,7 @@ In questa piccola guida voglio pa](https://codinglife.blog/netwon)
 
 - - - -
 
-### Task Week 7 - ES
+### Task Week 7 - es.py
 
 #### Description 
 
@@ -538,13 +538,21 @@ $ python es.py moby-dick.txt
 </details>
 
 - - - -
-The program read a file text called by the user through the prom command and return the number of time the letter "e" is in the file.
-For my understanding from the explanation of the exercise the program should be called es.py and the file moby-dict.txt.
-As an addiction functionality I have made the program tell to the user, in case the file doesn't exist, that the file have not been found in the directory and to create it or check the spelling.
+The program reads a text file called by the user through the command prompt and returns the number of times the letter 'e' appears in the file. Based on the exercise description, the program should be named es.py, and the file to be analyzed should be moby-dick.txt.
+
+As an additional functionality, I have added a feature that informs the user if the file does not exist in the directory.
 
 #### How it works
 
-The program prompts the user to input the name of a text file to be read using the sys module. The program then checks if the file exists in the current directory. If the file does not exist, the program informs the user that the file does not exist and either needs to be created or the file name needs to be checked. In this case, to meet the task requirements, a file named "moby-dick.txt" has been created in the same directory to be read by the program if specified by the user. If the program finds the file, it opens the file in read mode and counts the number of occurrences of lowercase "e" only. Finally, the program prints the count of the lowercase "e" occurrences in the file.
+Here the main steps of the program:
+
+1. The program can be run by executing the **"es.py"** script
+2. The script retrieves the filename to be analyzed through the command line arguments using **sys.arg**
+3.  The program then checks if the file exists in the current directory. 
+4.  If the file does not exist, the program informs the user that the file does not exist and either needs to be created, or the spelling need to be check.
+5.  In this case, to meet the task requirements, a file named "moby-dick.txt" has been created in the same directory to be read by the program if specified by the user. 
+6.  If the program finds the file, it opens the file in read mode and counts the number of occurrences of lowercase "e" only. 
+7.  Finally, the program prints the count of the lowercase "e" occurrences in the file.
 
 <details>
            <summary>Code comments</summary>
@@ -569,7 +577,7 @@ letter = "e"
 ````
 Funciont that:
    1. open the file in read mode 
-   2. read file contents into variable
+   2. enter the file contents into a variable
    3. count the occurence in the the file of the variable letter
    4. return this count 
 
@@ -581,7 +589,7 @@ def count_letter(filename, letter):
     return (count)
 ````
 Main program:
-  1. Check if the file exist with os.path.exist and if not exist inform the user 
+  1. Check if the file exist with **os.path.exist** and if not exist inform the user 
   2. if the file exist execute the above function in order to count the number of tyme variable "letters" is in the text file
 
 ````python
