@@ -402,7 +402,7 @@ This code print the appropriate message based on the day of the week. The if sta
 - - - -
     
 
-### Task Week  6 - squareroot
+### Task Week  6 - squareroot.py
 
 #### Description 
 
@@ -466,7 +466,7 @@ If the user choose option "a", make the number positive and return it.
 if choice == "a":
             new_number = abs(user_input)
             print (f"The new number is {new_number}")
-            return new_number] 
+            return new_number
 ```
 If the user choose option "b", prompt the user to enter a new positive number
 
