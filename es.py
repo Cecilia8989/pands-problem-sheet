@@ -1,7 +1,6 @@
-# This programm let the user promp the name of the file in the command line, if the file exist it count how many "e" there are in the file 
-# if the file don't exist, it inform to the user that the file doesn't exist 
-# from the output of your example I understand that this exercise should be called es. py and the file moby-dick.txt.
-# Because of that i have created a text file in the same repository with the name moby-dick.txt with a random content
+# es.py
+''' This programm let the user promp the name of the file in the command line, if the file exist it count how many "e" there are in the file 
+if the file don't exist, it inform to the user that the file doesn't exist'''
 # Author: Cecilia Pastore 
 
 
