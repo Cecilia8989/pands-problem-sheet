@@ -1,9 +1,6 @@
-# This script ask to the user a positive float number and calculate the square root following the newton metod
-# The script first check that the user inpunt a positive number
-# If the number entered by the user is not positvie ask to the user if he wants keep the same number
-# but positive or enter a new number 
-# based on the answer it take the positive number of the verison or prompt the user to enter a new number 
-# at this stage it calculate the square root of the user input number 
+#squareroot.py
+'''This script ask to the user a positive float number and calculate 
+the square root following the newton metod'''
 # Author: Cecilia Pastore 
 
 # promp the user to enter a positive floiting number 
