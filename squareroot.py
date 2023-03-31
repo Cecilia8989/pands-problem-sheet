@@ -7,7 +7,7 @@
 # Author: Cecilia Pastore 
 
 # promp the user to enter a positive floiting number 
-user_input=float(input("Please enter a positive float number "))
+user_input=float(input("Please enter a positive float number: "))
 
 # function to handle the case when the input number is not positive    
 def choice_user():
@@ -38,8 +38,10 @@ def sqrt(user_input):
 while user_input < 0:
     user_input = choice_user()
     
-# Print the square root. Number round to 4.
-square_root = sqrt(user_input)
-print(round(square_root,4))
+# Print the square root. Number round to .
+square_root = round(sqrt(user_input),1)
+print(f'The square rot of {user_input} is approx. {square_root}')
+
+
     
     
