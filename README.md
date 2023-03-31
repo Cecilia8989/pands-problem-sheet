@@ -445,13 +445,13 @@ Here the main steps of the program:
            <summary>Code comments</summary>
            <p>
 
-Prompt the user to input a positive-floating number and assign the input value to the 'user_input' variables. 
-If the user does not enter a positive number, prompt a message with 2 options and ask the user to enter their choice."
-
+Prompt the user to input a positive-floating number and assign the input value to the **'user_input'** variables. 
+               
 ```python
 user_input=float(input("Please enter a positive float number "))
 ```
-Define a function called choice_user(). The function is called when the input number is not positive.
+Define a function called **choice_user()**. The function is called when the input number is not positive. This function, in case the user entered a negative number, give to him two choices.
+               
 ```python
 def choice_user():
         print("You didn't enter a postive numer")
@@ -475,7 +475,7 @@ else:
             return float(input("Please enter a positive float number "))
 ````
 
-Define a function called sqrt(). This function calculate the square root of a number using the Newton-Raphson method:
+Define a function called **sqrt()**. This function calculate the square root of a number using the [Newton-Raphson method](http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton'sMethod.html):
 - The initial guess is set to half of the user input.
 - A better approximation is calculated using the formula: better = 0.5 * (approx + user_input/approx)
 - A loop is run until the better approximation is equal to the previous approximation
@@ -491,15 +491,13 @@ def sqrt(user_input):
     return approx
 ```
 This is the main program where each function is recalled if needed.
-As long us 'user_input' is less than 0 the 'choice_user()' function will run. The output will be a positive 'user_input' float number that will enter in the sqrt() function that will be passes into the sqrt() function to calculate its square root.Finally, the square root will be printed with a round of 4 digits.
-
-
+As long us **'user_input'** is less than 0 the **'choice_user()'** function will run. The output will be a positive float number, which will be passes into the **sqrt()** function to calculate its square root.Finally, the square root will be printed with a round of one digit with a mengful message.
 ```python
 while user_input < 0:
     user_input = choice_user()
     
-square_root = sqrt(user_input)
-print(round(square_root,4))
+square_root = round(sqrt(user_input),1)
+print(f'The square rot of {user_input} is approx. {square_root}')
 ```
 </p>
 </details>
