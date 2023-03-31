@@ -10,10 +10,14 @@ This document contain an explanation of every program created as weekly task dur
 - Python 3.19
 
 ### Table of content
-* [Task week 01 Helloworld.py](https://github.com/Cecilia8989/pands-problem-sheet/edit/main/README.md#task-week-01-helloworld.py)
-* [Task week 02 bank.py](https://github.com/Cecilia8989/pands-problem-sheet/edit/main/README.md#task-week-02-bank.py)
-* [Task Week 03 accounts.py](https://github.com/Cecilia8989/pands-problem-sheet#task-week-03-accountspy)
-* [Task Week 04 collatz.py](https://github.com/Cecilia8989/pands-problem-sheet/edit/main/README.md#task-week-04-collatzpy)
+* [Task week 01 helloworld.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-1---helloworldpy)
+* [Task week 02 bank.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week--2---bankpy)
+* [Task Week 03 accounts.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-3---accountpy)
+* [Task Week 04 collatz.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-4---collatzpy)
+* [Task Week 05 weekday.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-5---weekdaypy)
+* [Task Week 06 squareroot.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week--6---squareroot)
+* [Task Week 07 es.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-7---es)
+* [Task Week 08 plottask.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-8---plottaskpy)
 
 ### Task Week 1 - helloWorld.py
 
