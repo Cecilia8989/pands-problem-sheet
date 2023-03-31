@@ -402,7 +402,7 @@ This code print the appropriate message based on the day of the week. The if sta
 - - - -
     
 
-### Task Week  6 - Squareroot
+### Task Week  6 - squareroot
 
 #### Description 
 
@@ -425,20 +425,21 @@ The square root of 14.5 is approx. 3.8.
 </details>
 
 - - - -
-In addiction to the requested task, The program is first checking that the user enter a positive number. If the number entered is negative the program will propose several scenario until the number input by the user will be positive.
+In addiction to the requested task, The program is first checking that the user enter a positive number. If the number entered is negative the program propose several scenarios until the user input a positive number.
 
-In summary, the program prompts the user to enter a positive floating-point number, and then calculates the square root of that number using the Newton method. If the user enters a negative number, the program calls a function called choice_user() to handle the case and prompt the user to either keep the same number and make it positive, or enter a new positive number. The program then calls the sqrt() function to calculate the square root of the input number using the Newton method, and prints the result.
+In summary, the program prompts the user to enter a positive floating-point number, and then calculates the square root of that number using the Newton method. If the user enters a negative number, the program calls a function called choice_user() to handle the case and prompt the user to either keep the same number and make it positive or enter a new positive number. Then, the program then calls the sqrt() function to calculate the square root of the number using the Newton method, and prints the result.
 
 #### How it work
 
 Here the main steps of the program:
 
-1. Prompt the user to enter a positive floating-point number.
-2. Define a function called choice_user() to handle the case where the input number is negative.
-3. Define a function called sqrt() to calculate the square root of a number using the Newton method.
-4. If the input number is negative, call choice_user() to prompt the user to either keep the same number and make it positive, or enter a new positive number.
-5. Call sqrt() function to calculate the square root of the input number using the Newton method.
-6. Print the result of the square root calculation.
+1. The program can be run by executing the **"squareroot.py"** script
+2. It prompt the user to enter a positive floating-point number.
+3. Define a function called **choice_user()** to handle the case where the input number is negative.
+4. Define a function called **sqrt() to** calculate the square root of a number using the Newton method.
+5. If the input number is negative, call **choice_user()** to prompt the user to either keep the same number and make it positive or enter a new positive number.
+6. Call **sqrt()** function to calculate the square root of the input number using the Newton method.
+7. Print the result of the square root calculation.
 
 <details>
            <summary>Code comments</summary>
@@ -508,17 +509,13 @@ print(round(square_root,4))
            <summary>Sources</summary>
            <p>
 
--	Stackoverflow
-
-    [Phyton command line arguments file name ](https://stackoverflow.com/questions/33766029/python-command-line-arguments-file-name)
-
-    [How to write a function that takes in the name of a file as the argument in phyton  ](https://stackoverflow.com/questions/63066948/how-to-write-a-function-that-takes-in-the-name-of-a-file-as-the-argument-in-pyth)
-
-    [I want to read in a file from the command line in python](https://stackoverflow.com/questions/7439145/i-want-to-read-in-a-file-from-the-command-line-in-python)
-
-- youtube 
-
-    [Python 3 Programming Tutorial - Sys Module](https://www.youtube.com/watch?v=rLG7Tz6db0w)
+- [Metodo delle tangenti](https://it.wikipedia.org/wiki/Metodo_delle_tangenti)
+- [La radice quadrata di 2 (metodo di Newton)](http://numerici.mateweb.eu/equazioni/radice2_newton.html#:~:text=Come%20esempio%20di%20applicazione%20del%20metodo%20di%20Newton%2C,1%20e%20a%20partire%20da%20zero%20%28tabella%20accanto%29)
+- [Il Metodo di Newton](http://www.andreamarino.it/python/thinkcspy/MoreAboutIteration/Newton'sMethod.html)
+- [Evoluzione calcolo radice quadrata metodo di Newton
+In questa piccola guida voglio pa](https://codinglife.blog/netwon)
+- [Newton-Raphson Method | Numerical Computing in Python](https://www.youtube.com/watch?v=szQUIRPrAgQ)
+- [Square Root of a Number using Newton's Method | Python | The Last Minute Professor](https://www.youtube.com/watch?v=xdlIFw5EM4w)               
 </p>
 </details>
 
