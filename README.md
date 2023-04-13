@@ -532,8 +532,6 @@ In questa piccola guida voglio pa](https://codinglife.blog/netwon)
 
 ### Task Week 7 - es.py
 
-**Script modified after lecture feedback**
-
 #### Description 
 
 <details>
@@ -551,9 +549,11 @@ $ python es.py moby-dick.txt
 </details>
 
 - - - -
-The program reads a text file called by the user through the command prompt and returns the number of times the letter 'e' appears in the file. Based on the exercise description, the program should be named es.py, and the file to be analyzed should be moby-dick.txt.
+**Script modified after lecture feedback**
 
-As an additional functionality, I have added a feature that informs the user if the file does not exist in the directory.
+The program reads a text file called by the user through the command prompt and returns the number of times the letters 'e' and/or 'E' appears in the file. Based on the exercise description, the program should be named es.py, and the file to be analyzed should be moby-dick.txt.
+
+As an additional functionality, I have added a feature that informs the user if he forgot to prompt the file in the command line argument or if the file entered doesn't exist. 
 
 #### How it works
 
