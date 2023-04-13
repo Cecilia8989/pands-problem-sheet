@@ -99,7 +99,8 @@ Here the main steps of the program:
 - The program can be run by executing the **"bank.py"** script. 
 - The program will prompt the user to enter a first quantity in cents.
 - A  second quantity in cents will be asked to the user.
-- The program will them calculate the total amount in Euro by adding the two quantities and dividing the result by 100.
+- It calculates the total amount in euros by adding cents1 and cents2 together, and then using integer division (//) to obtain the whole number of euros without any decimals.
+- It calculates the remaining cents after the addition of cents1 and cents2 using the modulo operator (%), which gives the remainder of the division. 
 - The total amount in Euro will be displayed with the Euro Symbol
 
 
@@ -112,14 +113,21 @@ The user is asked for two quantities in cents. The quantities need to be integer
 cents1 = int(input("Please enter an amount (in cents): "))
 cents2 = int(input("Please enter an amount (in cents): "))
 ```
-The program calculate the total amount in Euro by adding user inputs (**cent1** and **cent2**) and dividing them by 100.
+
+It calculates the total amount in euros by adding cents1 and cents2 together, and then using integer division (//) to obtain the whole number of euros without any decimals. The result is stored in the variable total_euro.             
 ```python
-amount_in_euro = (cents1 + cents2)/100
+sum_cents = cents1 + cents2
+total_euro = sum_cents // 100
+```
+               
+It calculates the remaining cents after the addition of cents1 and cents2 using the modulo operator (%), which gives the remainder of the division. The result is stored in the total_cents
+```python
+total_cents = sum_cents % 100 
 
 ```
 Print the total amount in Euro with the [Euro symbol](https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python#:~:text=Euro%20is%20encoded%20as%2080h%20%280x80%29%20in%20the,as%20others%20said%2C%20using%20the%20correct%20encoding%20%28utf-8%29%3A).
 ````python
-print (f'The sum of these is \u20ac{amount_in_euro}')
+print (f'The sum of these is \u20ac{total_euro}.{total_cents}')
 ````
 
 
@@ -141,6 +149,7 @@ print (f'The sum of these is \u20ac{amount_in_euro}')
   - [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
   - [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
   - [How To Write A Good README File](https://dev.to/merlos/how-to-write-a-good-readme-bog)
+  - [Division Operators in Python](https://www.geeksforgeeks.org/division-operators-in-python/)
 
 
 </p>
