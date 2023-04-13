@@ -16,7 +16,7 @@ This document contain an explanation of every program created as weekly task dur
 * [Task Week 04 collatz.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-4---collatzpy)
 * [Task Week 05 weekday.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-5---weekdaypy)
 * [Task Week 06 squareroot.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week--6---squareroot)
-* [Task Week 07 es.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-7---es)
+* [Task Week 07 es.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-7---espy)
 * [Task Week 08 plottask.py](https://github.com/Cecilia8989/pands-problem-sheet/blob/main/README.md#task-week-8---plottaskpy)
 
 ### Task Week 1 - helloWorld.py
@@ -579,8 +579,8 @@ import modules needed for the script:
 import sys 
 import os 
 ```
-First some funtions are defined. 
-Define the function **count_letter_e()**. The function counts the occurence of the letter **e** in the selected file.
+First, some useful functions are defined.
+The first function defined is count_letter_e(). The count_letter_e() method counts the occurence of the letter e in the selected file.
 Here the main steps:
    1. Open the file in read mode using the with open() statement.
    2. Read the contents of the file into a variable called counter.
