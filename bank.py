@@ -6,8 +6,11 @@
 cents1 = int(input("Please enter an amount (in cents): "))
 cents2 = int(input("Please enter an amount (in cents): "))
 
-# Calculate the total amount in euro, by adding the two quantities and dividing by 100
-amount_in_euro = (cents1 + cents2)/100
+# Calculate the total amount in euro, by using and integer division 
+sum_cents = cents1 + cents2
+total_euro = sum_cents // 100 
+total_cents = sum_cents % 100 
+
 
 # Print the total amount in euro, with a Euro sign symbol
-print (f'The sum of these is \u20ac{amount_in_euro}')
+print (f'The sum of these is \u20ac{total_euro}.{total_cents}')
