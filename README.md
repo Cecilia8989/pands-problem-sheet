@@ -62,8 +62,6 @@ print("Hello World!")
 
 ### Task Week  2 - bank.py
 
-**Script modified after lecture feedback**
-
 #### Description 
 
 <details>
@@ -89,6 +87,8 @@ The sum of these is €2.45
 ```
 </p>
 </details>
+
+**Script modified after lecture feedback**
 
 This program is designed to ask the user for two monetary quantities in cents and then calculate the total amount in euros. The resulting amount is displayed with the Euro sign symbol.
 
@@ -580,7 +580,7 @@ import sys
 import os 
 ```
 First, some useful functions are defined.
-The first function defined is count_letter_e(). The count_letter_e() method counts the occurence of the letter e in the selected file.
+The first function defined is count_letter_e(). The count_letter_e() function counts the occurence of the letter e in the selected file.
 Here the main steps:
    1. Open the file in read mode using the with open() statement.
    2. Read the contents of the file into a variable called counter.
