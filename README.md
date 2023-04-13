@@ -651,12 +651,7 @@ else:
 Establish the variable "letter" as the letter that will be counted.
 ````python
 letter = "e"
-````         
-               
-Establish the variable "letter" as a default value.
-````python
-letter = "e"
-````             
+````                   
 Main program:
   1. Check if the file exist with **os.path.exist** and if not exist inform the user 
   2. if the file exist execute the above function in order to count the number of tyme variable "letters" is in the text file
