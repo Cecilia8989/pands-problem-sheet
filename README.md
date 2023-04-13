@@ -62,6 +62,8 @@ print("Hello World!")
 
 ### Task Week  2 - bank.py
 
+**Script modified after lecture feedback**
+
 #### Description 
 
 <details>
@@ -530,6 +532,8 @@ In questa piccola guida voglio pa](https://codinglife.blog/netwon)
 
 ### Task Week 7 - es.py
 
+**Script modified after lecture feedback**
+
 #### Description 
 
 <details>
@@ -555,13 +559,13 @@ As an additional functionality, I have added a feature that informs the user if 
 
 Here the main steps of the program:
 
-1. The program can be run by executing the **"es.py"** script
-2. The script retrieves the filename to be analyzed through the command line arguments using **sys.arg**
-3.  The program then checks if the file exists in the current directory. 
-4.  If the file does not exist, the program informs the user that the file does not exist and either needs to be created, or the spelling need to be check.
-5.  In this case, to meet the task requirements, a file named "moby-dick.txt" has been created in the same directory to be read by the program if specified by the user. 
-6.  If the program finds the file, it opens the file in read mode and counts the number of occurrences of lowercase "e" only. 
-7.  Finally, the program prints the count of the lowercase "e" occurrences in the file.
+1. The program can be run by executing the **es.py** script.
+2. The script retrieves the filename to be analyzed through the command line arguments using **sys.argv**.
+3. If no filename is provided, the program exits with an error message.
+4. The program then checks if the file exists in the current directory. If the file does not exist, the program informs the user that the file does not exist and either needs to be created or the spelling needs to be checked.
+5. If the program finds the file, it prompts the user to enter their choice for which letter to count (lowercase "e", uppercase "E", or both).
+6. It counts the number of occurrences of the chosen letter(s) in the file based on user input by calling the appropriate functions. If the user enter an invalid option He will need to enter it again.
+7. Finally, the program prints the count of the chosen letter(s) occurrences in the file.
 
 <details>
            <summary>Code comments</summary>
@@ -575,28 +579,84 @@ import modules needed for the script:
 import sys 
 import os 
 ```
-Get the filename from the user through a command line argument 
-
-```python
-filename = sys.argv[1] 
-```
-Establish the variable "letter" as the letter that will be counted.
-````python
-letter = "e"
-````
-Funciont that:
-   1. open the file in read mode 
-   2. enter the file contents into a variable
-   3. count the occurence in the the file of the variable letter
-   4. return this count 
+First some funtions are defined. 
+Define the function **count_letter_e()**. The function counts the occurence of the letter **e** in the selected file.
+Here the main steps:
+   1. Open the file in read mode using the with open() statement.
+   2. Read the contents of the file into a variable called counter.
+   3. Count the occurrences of the uppercase letter in the file using the count() method.
+   4. Return the count of occurrences as the function's result.
 
 ````python
-def count_letter(filename, letter):
+def count_letter_e(filename, letter):
     with open(filename, "r") as f:
         counter = f.read()
         count = counter.count(letter)
     return (count)
 ````
+Establish the variable "letter" as the letter that will be counted.
+````python
+letter = "e"
+````
+Define the function **count_letter_E()**. The function counts the occurence of the letter **E** in the selected file.
+The main difference with the **count_letter_e()** function is that at the beginning it converts the input letter to uppercase using the [upper()](https://stackoverflow.com/questions/51816880/python-read-a-text-file-and-convert-it-to-upper-case-and-write-to-a-second-fi) method. 
+               
+````python
+def count_letter_E(filename, letter):
+    letter_upper = letter.upper()
+    with open(filename, "r") as f:
+        counter = f.read()
+        count = counter.count(letter_upper)
+    return (count)
+````
+Define the function count_letter_e_and_E(). The function counts the occurrences of both the letters 'e' and 'E' in the selected file. The main difference between this function and the count_letter_e() function is that it converts the contents of counter to lowercase using the lower() method. This means that all the letters in the file are converted to lowercase before counting the occurrences of the lowercase letter 'e'. As a result, this function counts both uppercase and lowercase 'e' occurrences in a case-insensitive manner.
+               
+````python
+def count_letter_e_and_E(filename, letter):
+    with open(filename, "r") as f:
+        counter = f.read().lower()
+        count = counter.count(letter)
+    return (count)
+````
+Define the function user_choice_input().
+The function displays a menu to the user with three options for counting occurrences of letters. It then prompts the user to input their choice by entering a corresponding number. Finally, the function returns the user's choice as an integer value.
+               
+````python
+def user_choice_input():
+    print (" What do you want to count: ")
+    print("\t 1. e (lower case)")
+    print("\t 2. E (upper case)")
+    print("\t 3. e and E")
+    user_choice = int(input("Please make your choice: ")) 
+    return user_choice
+````
+Now we are entering in the main program.
+First, it get the filename from the command line argument and uses a [try-except block](https://itecnote.com/tecnote/python-checking-if-sys-argvx-is-defined/) to handle the case where the user does not provide a filename as a command line argument. If no argument is provided, the script exits using the sys.exit() with an error message.
+
+```python
+try:
+    filename = sys.argv[1]
+except IndexError:
+    sys.exit ("You didn't enter any file name. Please execute the script again")
+```
+It checks if the specified file does not exist using the os.path.exists() function. If the file does not exist, it terminates the script using the sys.exit() function and displaying an error message.
+If the file exists, it calls the user_choice_input() function to get the user's choice for counting occurrences.
+               
+```python
+if not os.path.exists(filename):
+    sys.exit(filename + "does not exist, create it or check your spelling ")
+else:
+    user_choice = user_choice_input()
+```
+Establish the variable "letter" as the letter that will be counted.
+````python
+letter = "e"
+````         
+               
+Establish the variable "letter" as a default value.
+````python
+letter = "e"
+````             
 Main program:
   1. Check if the file exist with **os.path.exist** and if not exist inform the user 
   2. if the file exist execute the above function in order to count the number of tyme variable "letters" is in the text file
@@ -608,6 +668,30 @@ else:
     print(count_letter(filename, letter))           
             
 ````
+It defines a list of valid options [1,2,3] for the user's choice and  It uses a while loop to repeatedly prompt the user for a choice until a valid option is entered.
+````python
+options = [1,2,3]
+while user_choice not in options:
+    print( "Please enter a choice between 1, 2 or 3")
+    user_choice = int(input("Please make your choice: "))                    
+````
+It uses an if statement to call a specific function based on the user's choice. Basically, depending on the option selected by the user, the program executes a specific count.
+````python
+ if user_choice == 1:
+    count =  count_letter_e(filename, letter)
+    letter = "e"
+elif user_choice == 2:
+    count = count_letter_E(filename, letter)
+    letter = "E"
+else:
+    count =count_letter_e_and_E(filename, letter)
+    letter = "e and E"             
+````               
+
+It print the result of the count.
+````python
+print (f'In the file there are {count} letters {letter}' )                  
+````
 </p>
 </details>
 
@@ -617,25 +701,22 @@ else:
            <p>
 
 -	Stackoverflow
-
     [Phyton command line arguments file name ](https://stackoverflow.com/questions/33766029/python-command-line-arguments-file-name)
-
     [How to write a function that takes in the name of a file as the argument in phyton  ](https://stackoverflow.com/questions/63066948/how-to-write-a-function-that-takes-in-the-name-of-a-file-as-the-argument-in-pyth)
-
     [I want to read in a file from the command line in python](https://stackoverflow.com/questions/7439145/i-want-to-read-in-a-file-from-the-command-line-in-python)
-
+    [Python :- Read a text file and convert it to upper case and write to a second file](https://stackoverflow.com/questions/51816880/python-read-a-text-file-and-convert-it-to-upper-case-and-write-to-a-second-fi)
 - youtube 
-
     [Python 3 Programming Tutorial - Sys Module](https://www.youtube.com/watch?v=rLG7Tz6db0w)
-
     [Command line arguments](https://www.youtube.com/watch?v=PZN7vVxeh9M)
 
-- Real phyton - [Python Command-Line Arguments](https://realpython.com/python-command-line-arguments/)
-
-- Tutorialspoint - [Python - Command Line Arguments](https://www.tutorialspoint.com/python/python_command_line_arguments.ht)
-
-- Geeksforgeeks - [Count the number of times a letter appears in a text file in Python](https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/)
-
+- [Python Command-Line Arguments](https://realpython.com/python-command-line-arguments/)
+- [Python - Command Line Arguments](https://www.tutorialspoint.com/python/python_command_line_arguments.ht)
+- [Count the number of times a letter appears in a text file in Python](https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/)
+- [Python – Checking if sys.argv[x] is defined](https://itecnote.com/tecnote/python-checking-if-sys-argvx-is-defined/)
+- [Exit a Process with sys.exit() in Python](https://superfastpython.com/exit-process/)
+- [Python exit command](https://pythonguides.com/python-exit-command/)
+- [4 Ways of Exiting the Program with Python Exit Function](https://www.pythonpool.com/python-exit/)               
+    
 </p>
 </details>
 
